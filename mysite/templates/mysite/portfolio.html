@@ -1,0 +1,39 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" style="margin-top: 100px">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/startup.png' %}" width="200" height="300" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Learn To Code</h5>
+                    <p class="card-text">This is my startup whose aim is help Youtube content creators achieve success..</p>
+                    <p class="card-text">
+                        <small class="text-muted">www.youtube.com/rhrobi</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/django.jpg' %}"width="200" height="300" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Developer</h5>
+                    <p class="card-text">Develop website by python & django</p>
+                    <p class="card-text">
+                        <small class="text-muted">Internet of Things</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'mysite/images/image.jpg' %}" width="200" height="300" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Travelling</h5>
+                    <p class="card-text">I love to travel if i get free</p>
+                    <p class="card-text">
+                        <small class="text-muted">travelling is life</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

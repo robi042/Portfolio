@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import student, Contact
+admin.site.register(student)
+admin.site.register(Contact)
