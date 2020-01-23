@@ -13,10 +13,12 @@
     <title>Robi's profile</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="{% static 'mysite/images/robi.png' %}" width="70" height="70" alt="">
+            <h1>robi132@nsu.edu</h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,16 +35,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'details' %}">Details</a>
+                </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <img src="{% static 'mysite/images/facebook.png' %}" width="30" height="30" alt="">
+                    <a class="nav-link" href="https://www.facebook.com/rhrobi.2015">
+                        <img src="{% static 'mysite/images/facebook.png' %}" width="30" height="30" alt="">
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <img src="{% static 'mysite/images/linkin.png' %}" width="30" height="30" alt="">
+                     <a class="nav-link" href="https://instagram.com/rh_robi99?fbclid=IwAR1PBTaWzmOUjf4hRLTVyT5oig78ho-f8Crrv_vnMpI6ISV_iKaCS_Rwpbk">
+                         <img src="{% static 'mysite/images/linkin.png' %}" width="30" height="30" alt="">
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <img src="{% static 'mysite/images/github.png' %}" width="30" height="30" alt="">
+                    <a class="nav-link" href="https://github.com/robi042">
+                        <img src="{% static 'mysite/images/github.png' %}" width="30" height="30" alt="">
+                    </a>
                 </li>
             </ul>
         </div>

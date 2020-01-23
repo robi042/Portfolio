@@ -41,3 +41,7 @@ def contact(request):
 
 def portfolio(request):
     return render(request, 'mysite/portfolio.html')
+
+
+def details(request):
+    return render(request, 'mysite/details.html')
